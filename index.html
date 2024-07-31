@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/kudaLogo.png" type="image/png" />
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body  id="body" >
+    <main class="flex flex-col mx-auto w-[90%] " >
+      <!-- Desktop Nav Section -->
+      <div
+        class="bg-white fixed flex justify-around items-center h-[50px] w-[90%] text-xs mx-auto shadow-sm md:bottom-10 md:text-center md:w-[50%] md:left-1/2 md:transform md:-translate-x-1/2 md:mx-auto md:border md:border-[#eeeeee] md:rounded-lg z-30"
+      >
+        <p class="">
+          By using this website you agree to our
+          <a href="#" class="text-[#40196D] underline">cookie policy</a>
+        </p>
+        <a href="#" class="bg-[#DFe3EF] text-[#40196D] py-2 px-3 rounded-md"
+          >Dismiss</a
+        >
+      </div>
+
+      <nav
+        class="bg-white z-30 sticky top-[50px] w-full py-4 flex justify-between items-center text-[#40196D] text-xs md:sticky md:top-0"
+      >
+        <div><img src="assets/Link (1).png" alt="Logo" /></div>
+        <div class="hidden md:flex space-x-4">
+          <div class="relative dropdown">
+            <a href="#" class="dropdown-btn px-4"
+              >Personal <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Discover Personal</a>
+              <a href="#">Transfer and Spend</a>
+              <a href="#">Save</a>
+              <a href="#">Investments</a>
+              <a href="#">Kuda Card</a>
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <a href="#" class="dropdown-btn px-4"
+              >Business <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Send Money</a>
+              <a href="#">TV</a>
+              <a href="#">Airtime and Internet Data</a>
+              <a href="#">Electricity</a>
+              <a href="#">Bill Payment</a>
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <a href="#" class="dropdown-btn px-4"
+              >Company <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Blog</a>
+              <a href="#">Press</a>
+              <a href="#">Join Our Team</a>
+              <a href="#">About Us</a>
+            </div>
+          </div>
+          <div class="relative dropdown">
+            <a href="#" class="dropdown-btn px-4"
+              >Help <i class="fa-solid fa-caret-down"></i
+            ></a>
+            <div class="dropdown-content">
+              <a href="#">Get Help</a>
+              <a href="#">Scam Awareness</a>
+              <a href="#">FAQs</a>
+              <a href="#">Security</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Self Help</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex items-center">
+          <a href="#" class="px-2 hidden md:block">Sign In</a>
+          <a
+            href="#"
+            class="mx-4 bg-[#40196D] hidden md:block text-white px-4 py-2 rounded-md font-bold"
+            >Join Kuda</a
+          >
+
+          <img
+            src="assets/flagIcon.png"
+            alt="Flag Icon"
+            class="px-2 dropdown-btn"
+          />
+
+          <div
+            class="block md:hidden text-2xl mx-1 cursor-pointer"
+            id="toggleMenu"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </nav>
+      <!--  -->
+      <div class="dropdown-bg"></div>
+
+      <!-- Mobile Nav Section -->
+      <section
+        class="hidden fixed top-[70px] overflow-hidden z-20 w-full h-[100vh] bg-white"
+        id="nav-menu"
+      >
+        <div class="mt-16 mb-10 text-sm">
+          <a
+            href="#"
+            class="mx- bg-[#40196D] text-white px-4 py-2 rounded-md font-bold"
+            >Join Kuda</a
+          >
+          <a
+            href="#"
+            class="mx-4 bg-[#f3f5ff] text-[#40196D] px-6 py-2 rounded-md font-bold"
+            >Sign In</a
+          >
+        </div>
+        <div>
+          <ul class="">
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Personal
+            </li>
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Business
+            </li>
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Company
+            </li>
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Developers
+            </li>
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Contact Us
+            </li>
+            <li class="py-5 border-b border-[#eeeeee] font-bold text-[#40196D]">
+              Help
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Header Section -->
+      <header
+        class="flex flex-col items-center max-w-[90%] mx-auto md:h-[50vh] lg:h-[100vh] md:flex-row"
+      >
+        <div class="text-center md:text-left">
+          <h3
+            class="text-4xl mt-20 md:mt-0 lg:text-5xl mb-5 font-[900] text-[#40196D]"
+          >
+            The money app for Africans.
+          </h3>
+          <p class="w-[90%] text-center font-[600] text-lg md:text-left">
+            Make free transfers, enjoy cashless payment options and earn
+            interest on your savings with Kuda.
+          </p>
+          <img
+            src="assets/tabs-cropped.png"
+            alt=""
+            class="w-[270px] mt-8 flex mx-auto md:-mx-2"
+          />
+          <p class="text-[#979797] mt-5">
+            Fully Licensed by the CBN
+            <img src="assets/coat.png" alt="" class="inline" /> Deposits Insured
+            by <img src="assets/Vector(2)(1).png" alt="" class="inline" />
+          </p>
+        </div>
+        <div>
+          <img src="assets/hero.gif" alt="" class="w-full " />
+          <!-- <video width="800" autoplay loop>
+            <source src="assets/video.mp4" type="video/mp4" />
+          </video> -->
+        </div>
+      </header>
+
+      <!-- Card Section -->
+      <section
+        class="fade-in flex flex-wrap justify-between mt-20 md:mt-0 max-w-[90%] mx-auto text-sm font-[900] text-[#40196D] gap-4"
+      >
+        <div
+          class="shadow-md p-5 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)]"
+        >
+          <img src="assets/five.png" alt="" />
+          <p>
+            Order a Kuda Visa card on the app with pickup and delivery options
+          </p>
+        </div>
+        <div
+          class="shadow-md p-5 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)]"
+        >
+          <img src="assets/four.png" alt="" />
+          <p>Enjoy cashless payment options online and offline.</p>
+        </div>
+        <div
+          class="shadow-md p-5 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(33.333%-1rem)]"
+        >
+          <img src="assets/3.png" alt="" />
+          <p>Pay your essential bills and buy gift cards easily.</p>
+        </div>
+        <div
+          class="shadow-md p-5 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(50%-0.5rem)]"
+        >
+          <img src="assets/two.png" alt="" />
+          <p>Get 25 free transfers to Nigerian banks every month.</p>
+        </div>
+        <div
+          class="shadow-md p-5 w-full sm:w-[calc(50%-0.5rem)] lg:w-[calc(50%-0.5rem)]"
+        >
+          <img src="assets/one.png" alt="" />
+          <p>Save money automatically any time you spend.</p>
+        </div>
+      </section>
+
+      <!-- Section 1 -->
+      <section
+        class="fade-in flex flex-col items-center max-w-[90%] mx-auto md:flex-row"
+      >
+        <div
+          class="flex flex-col items-center justify-between text-center mt-20 md:mt-36 md:max-w-[40%] md:text-left"
+        >
+          <h3
+            class="text-3xl lg:text-4xl mb-5 font-[900] text-[#40196D] md:max-w-full max-w-[60%]"
+          >
+            Your phone + our app + a debit card = a simpler life.
+          </h3>
+          <p
+            class="text-sm font-[400] text-center md:text-left md:max-w-full max-w-[70%]"
+          >
+            We designed a money app for your lifestyle, and you can get a debit
+            card to go with it. That's all you need to make the right money
+            moves. <br />
+            <a
+              href="#"
+              class="text-sm underline my-4 text-left font-[700] text-[#40196D]"
+              >Open An Account in Minutes <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </p>
+        </div>
+        <div><img src="assets/Container (4).png" alt="" /></div>
+      </section>
+
+      <!-- Section 2-->
+      <section
+        class="fade-in flex flex-col-reverse justify-center items-center mx-auto md:flex-row max-w-[90%]"
+      >
+        <div class=""><img src="assets/ContainerCards.png" alt="" /></div>
+        <div
+          class="flex flex-col mx-auto text-center md:text-left w-[80%] md:w-[40%]"
+        >
+          <h3 class="text-3xl md:text-4xl mb-5 font-[900] text-[#40196D]">
+            It’s your money, we just help you manage it.
+          </h3>
+          <p class="text-sm font-[400] text-center md:text-left">
+            Save it, spend it, send it. It’s up to you. Whatever you choose to
+            do with your money, we’ll make sure it’s done better and free of
+            charge. We take responsibility for that.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section
+        class="fade-in flex flex-col items-center justify-between mx-auto max-w-[90%] md:flex-row"
+      >
+        <div
+          class="w-[80%] md:w-[40%] mt-20 md:mt-36 mb-5 text-center md:text-left"
+        >
+          <h3 class="text-3xl md:text-4xl font-[900] text-[#40196D]">
+            Save money as you spend it, seriously.
+          </h3>
+          <p class="text-sm font-[400] text-center md:text-left">
+            You can’t avoid spending. That’s how you pay for your needs. But we
+            can help you put money away every time you pay for something. Just
+            set a percentage to save and watch your money grow.
+          </p>
+          <a
+            href="#"
+            class="text-sm underline my-5 text-left font-[700] text-[#40196D]"
+            >See all our savings <i class="fa-solid fa-angle-right"></i
+          ></a>
+        </div>
+        <div><img src="assets/Container (1).png" alt="" /></div>
+      </section>
+
+      <!-- Section 4-->
+      <section
+        class="fade-in flex flex-col-reverse items-center justify-between mx-auto max-w-[90%] md:flex-row"
+      >
+        <div>
+          <img
+            src="assets/blockCard.png"
+            alt=""
+            class="flex justify-center items-center"
+          />
+        </div>
+        <div
+          class="w-[80%] md:w-[40%] mt-20 md:mt-36 mb-5 text-center md:text-left"
+        >
+          <h3 class="text-3xl md:text-4xl font-[900] text-[#40196D]">
+            Turn off access, turn on safety.
+          </h3>
+          <p class="text-sm font-[400] text-center md:text-left">
+            Life happens. Milk spills. Debit cards go missing. If that ever
+            happens, you can block your missing card on the app so no one can
+            use it. We’d like to see them try.
+          </p>
+          <a
+            href="#"
+            class="text-sm underline my-4 text-left font-[700] text-[#40196D]"
+            >Learn more about cards</a
+          >
+        </div>
+      </section>
+
+      <!-- Section 5-->
+      <section
+        class="fade-in flex flex-col items-center justify-between mx-auto max-w-[90%] md:flex-row"
+      >
+        <div
+          class="w-[80%] md:w-[40%] mt-20 md:mt-36 mb-5 text-center md:text-left"
+        >
+          <h3 class="text-3xl md:text-4xl font-[900] text-[#40196D]">
+            We're always happy to help you.
+          </h3>
+          <p class="text-sm font-[400] my-2 text-center md:text-left">
+            You can chat with us on the app, slide into our DMs, tweet, leave an
+            Instagram comment, send an email or call. However you choose to
+            reach out, there’ll always be a friendly person there to make your
+            life easy.
+          </p>
+          <a
+            href="#"
+            class="text-sm underline my-4 text-left font-[700] text-[#40196D]"
+            >Get Help</a
+          >
+        </div>
+        <div>
+          <img src="assets/Container (2).png" alt="" />
+        </div>
+      </section>
+
+      <!-- Section 6 -->
+      <section
+        class="fade-in flex flex-col-reverse items-center justify-between mx-auto max-w-[90%] md:flex-row"
+      >
+        <div class="w-[80%] md:w-[50%]">
+          <img src="assets/Container (3).png" alt="" />
+        </div>
+        <div
+          class="w-[80%] md:w-[40%] mt-20 md:mt-36 mb-5 text-center md:text-left"
+        >
+          <h3 class="text-3xl md:text-4xl font-[900] text-[#40196D]">
+            Fees as clear as glass.
+          </h3>
+          <p class="text-sm font-[400] text-center md:text-left">
+            We’re serious about free banking, and we will never, ever charge you
+            for anything without your consent.
+          </p>
+          <a
+            href="#"
+            class="text-sm underline my-4 text-left font-[700] text-[#40196D]"
+            >See all our fees</a
+          >
+        </div>
+      </section>
+
+      <!-- Slider Section -->
+      <h3 class="text-center mt-20 mb-5 font-[900] text-[32px] text-[#40196D]">
+        Don't just take our word for it
+      </h3>
+      <section class="overflow-hidden relative">
+        <div class="flex gap-2 animate-slide text-sm">
+          <!-- Card 1 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              Well done to the guys at <b>@kudabank</b> <br />
+              had a dispensing error on Friday night <br />
+              and reached out to them on Sunday... 48 <br />
+              working hours after and my money is <br />
+              back in my account... Special shout out <br />to Maxwell and Norah
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/muhammad-a382b5f53a5e464e0a2929be0c68f852.svg fill.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>Mu'azu Muhammad Kudu</b>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              Just joined the best Digital Bank in Nigeria <br />
+              I have no complaints whatsoever since i <br />
+              started using Kuda
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/adebambo-a15ee685f877074818864b3eeecdfeef.svg fill.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>Tomisinv</b>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              Never thought an app would stylish <br />
+              become my everyday way to bank and <br />
+              have access to physical cash. <br />
+              <b>@Kudabank</b> is sleek
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/babajide-ca560e39acf445ef6c8e91104ef1be8d.svg.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>Babajide Duroshola</b>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              This is the best banking app! I'm enjoying <br />
+              seamless banking plus the free transfers to other <br />
+              banks is a thing of joy. This is what I call freedom. <br />
+              I've made kuda my main bank account and I'm <br />
+              gonna refer all my friends!
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/realsok-66705285fe944c95934d7ff3bda73bec.svg.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>@RealSOK_</b>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div
+            class="bg-white shadow-md p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              Never thought an app would stylish <br />
+              become my everyday way to bank and <br />
+              have access to physical cash. <br />
+              <b>@Kudabank</b> is sleek
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/babajide-ca560e39acf445ef6c8e91104ef1be8d.svg.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>Babajide Duroshola</b>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              This is the best banking app! I'm enjoying <br />
+              seamless banking plus the free transfers to other <br />
+              banks is a thing of joy. This is what I call freedom. <br />
+              I've made kuda my main bank account and I'm <br />
+              gonna refer all my friends!
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/realsok-66705285fe944c95934d7ff3bda73bec.svg.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>@RealSOK_</b>
+            </div>
+          </div>
+          <!-- Card 7 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              Just joined the best Digital Bank in <br />
+              Nigeria <br />
+              I have no complaints whatsoever since i <br />
+              started using Kuda
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/adebambo-a15ee685f877074818864b3eeecdfeef.svg fill.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>Tomisinv</b>
+            </div>
+          </div>
+          <!-- Card 8 -->
+          <div
+            class="bg-white shadow-lg p-5 rounded-md min-w-[100%] sm:min-w-[50%] lg:min-w-[33.333%] flex-shrink-0"
+          >
+            <p>
+              This is the best banking app! I'm enjoying <br />
+              seamless banking plus the free transfers to other <br />
+              banks is a thing of joy. This is what I call freedom. <br />
+              I've made kuda my main bank account and I'm <br />
+              gonna refer all my friends!
+            </p>
+            <div class="flex items-center mt-4">
+              <img
+                src="assets/realsok-66705285fe944c95934d7ff3bda73bec.svg.png"
+                alt=""
+                class="w-10 h-10 rounded-full mr-4"
+              />
+              <b>@RealSOK_</b>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Logo Section -->
+      <section
+        class="fade-in flex flex-wrap gap-5 justify-between items-center my-10 mx-auto w-[90%]"
+      >
+        <img src="assets/download.svg" alt="" />
+        <img src="assets/download (1).svg" alt="" />
+        <img src="assets/fintech.svg" alt="" />
+        <img src="assets/download (2).svg" alt="" width="150" />
+        <img src="assets/euromoney.svg fill.png" alt="" />
+      </section>
+
+      <!-- Partners Section -->
+      <section class="fade-in mx-auto w-[90%]">
+        <h3
+          class="text-center mt-10 mb-5 font-[900] text-[32px] text-[#40196D]"
+        >
+          Our Partners
+        </h3>
+        <div
+          class="flex flex-col gap-4 justify-between items-center my-10 mx-auto w-[90%] md:flex-row md:gap-1"
+        >
+          <img src="assets/image.png" alt="" />
+          <img src="assets/Vector (1).png" alt="" />
+          <img src="assets/sbiHoldings.svg.png" alt="" />
+          <img src="assets/targetGlobal.svg fill.png" alt="" />
+          <img src="assets/image (1).png" alt="" />
+        </div>
+      </section>
+
+      <!-- Table -->
+      <section class="mx-auto w-[90%]">
+        <h3
+          class="text-center mt-10 mb-5 font-[900] text-[32px] text-[#40196D]"
+        >
+          Choose the freedom you need.
+        </h3>
+        <div class="overflow-auto shadow-lg">
+          <table class="w-auto md:w-full border-collapse text-sm">
+            <thead class="border-b border-[#eeeeee] text-left text-[#40196D]">
+              <tr>
+                <th class="py-5 px-3"></th>
+                <th class="py-5 px-3 text-lg font-bold">Other Banks</th>
+                <th class="py-5 px-3">
+                  <img src="assets/Link (1).png" alt="" />
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Transfer Fee</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> Up to
+                  #50 plus V.A.T
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> 25 free
+                  transfers every month
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Card Delivery</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" />
+                  <img src="assets/SVG (1).png" alt="" class="inline" />
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> Yes
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Card Maintenance Fee</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> Up to
+                  #50 per quarter
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> No
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Alerts</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> Charge
+                  for SMS alerts
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> Free
+                  instant notifications
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Annual Interest</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> 4%
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> Up to
+                  15%
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Bill Payment Fee</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> Up to
+                  #100 per bill
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> No
+                </td>
+              </tr>
+              <tr class="p-3">
+                <td class="p-3 font-bold">Instant Reversals</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" />
+                  <img src="assets/SVG (3).png" alt="" class="inline" />
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> Yes
+                </td>
+              </tr>
+              <tr class="border-b border-[#eeeeee]">
+                <td class="p-3 font-bold">Maintenance</td>
+                <td class="p-3">
+                  <img src="assets/SVG (2).png" alt="" class="inline" /> Yes
+                </td>
+                <td class="p-3">
+                  <img src="assets/SVG (4).png" alt="" class="inline" /> No
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section Cards -->
+      <section class="fade-in mx-auto w-[90%]">
+        <h3
+          class="text-center mt-10 mb-5 font-[900] text-[32px] text-[#40196D]"
+        >
+          More for you
+        </h3>
+
+        <div class="flex flex-col gap-3 my-5 md:flex-row">
+          <div class="shadow-lg p-5 rounded-lg md:w-[50%]">
+            <img
+              src="assets/Vector (2).png"
+              alt=""
+              class="bg-[#f3f5ff] rounded-full p-2 mb-7"
+            />
+            <h3 class="font-[900] text-2xl text-[#40196D]">Kuda Business</h3>
+            <p class="font-[400] text-[16px] mb-5">
+              Grow your business with our all-in-one business manager. Get a
+              POS, bulk transfers, payroll and more.
+            </p>
+            <a href="#" class="font-[700] text-sm underline text-[#40196D]"
+              >Learn more <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="shadow-lg p-5 rounded-lg md:w-[50%]">
+            <img
+              src="assets/Vector (3).png"
+              alt=""
+              class="bg-[#f3f5ff] rounded-full p-2 mb-7"
+            />
+            <h3 class="font-[900] text-2xl text-[#40196D]">Transfer & Spend</h3>
+            <p class="font-[400] text-[16px] mb-5">
+              Send money for free to any Nigerian account with 25 free transfers
+              every month.
+            </p>
+            <a href="#" class="font-[700] text-sm underline text-[#40196D]"
+              >Learn more <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="shadow-lg p-5 rounded-lg md:w-[50%]">
+            <img
+              src="assets/SVG (5).png"
+              alt=""
+              class="bg-[#f3f5ff] rounded-full p-1 mb-7"
+            />
+            <h3 class="font-[900] text-2xl text-[#40196D]">Loans</h3>
+            <p class="font-[400] text-[16px] mb-5">
+              Get up to ₦150,000 in your Kuda account easily and repay in
+              convenient instalments.
+            </p>
+            <a href="#" class="font-[700] text-sm underline text-[#40196D]"
+              >Learn more <i class="fa-solid fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section More  -->
+      <section
+        class="fade-in mx-auto w-[90%] flex justify-between items-center bg-[#EFF1FF] px-10 py-5 mt-10 mb-16 border border-[#DCDCE080] rounded-md"
+      >
+        <div class="flex flex-col items-center py-8 md:block">
+          <h3
+            class="font-[900] text-[#40196D] text-center md:text-left text-3xl"
+          >
+            The money app for Africans
+          </h3>
+          <p class="text-sm font-[400] py-5">
+            Save, spend, send and invest money across borders
+          </p>
+          <button
+            class="bg-[#40196D] py-2 px-5 rounded-lg text-sm text-white hidden md:block"
+          >
+            Join Kuda
+          </button>
+          <img
+            src="assets/tabs-cropped.png"
+            alt=""
+            class="flex justify-center items-center w-[250px] md:hidden"
+          />
+        </div>
+        <div>
+          <img src="assets/SVG (6).png" alt="" class="hidden md:block" />
+        </div>
+      </section>
+      <hr />
+
+      <!-- Section Footer -->
+
+      <section
+        class="w-[90%] mx-auto my-10 grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
+      >
+        <div><img src="assets/Link (1).png" alt="" /></div>
+        <div>
+          <p class="font-bold text-[#40196D]">Personal</p>
+          <ul class="text-sm leading-7">
+            <li>Discover Personal</li>
+            <li>Transfer & Spend</li>
+            <li>Save</li>
+            <li>Investments</li>
+            <li>Kuda card</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-[#40196D]">Business</p>
+          <ul class="text-sm leading-7">
+            <li>Discover Business</li>
+            <li>Business Registration</li>
+            <li>softPOS</li>
+            <li>Invoicing</li>
+            <li>Salary Loan</li>
+            <li>Business API</li>
+            <li>Join Kuda Business</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-bold text-[#40196D]">Company</p>
+          <ul class="text-sm leading-7">
+            <li>Blog</li>
+            <li>Press</li>
+            <li>Join Our Team</li>
+            <li>About Us</li>
+          </ul>
+        </div>
+        <div class="text-sm leading-7">
+          <p class="font-bold text-[#40196D]">Help</p>
+          <ul>
+            <li>Get Help</li>
+            <li>Scam Awareness</li>
+            <li>FAQs</li>
+            <li>Security</li>
+            <li>Contact Us</li>
+            <li>Self Help</li>
+          </ul>
+        </div>
+        <div class="text-sm leading-7">
+          <p class="font-bold text-[#40196D]">Transparency</p>
+          <ul>
+            <li>Terms & Condition</li>
+            <li>Privacy Policy</li>
+            <li>Information Security Policy</li>
+            <li>Cookie Policy</li>
+            <li>Whistleblowing Policy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="w-[90%] mx-auto flex gap-2 flex-wrap">
+        <img src="assets/ContainerApplee.png" alt="" />
+        <img src="assets/ContainerGoogle.png" alt="" />
+        <img src="assets/kuda-tab.png" alt="" />
+      </section>
+      <p class="text-center text-sm text-[#979797] my-5">
+        Products may vary by country or market
+      </p>
+
+      <!-- Section Footer 2 -->
+      <section
+        class="w-[90%] mx-auto my-7 grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-6"
+      >
+        <div class="col-span-2">
+          <p class="mb-5 font-bold text-[#40196D]">Contact</p>
+          <a href="#" class="text-[#40196D] font-bold underline"
+            >help@kuda.com</a
+          >
+          <div class="flex gap-3 mt-5">
+            <img src="assets/Frame.png" alt="" />
+            <img src="assets/Frame (1).png" alt="" />
+            <img src="assets/Frame (2).png" alt="" />
+            <img src="assets/Frame (3).png" alt="" />
+            <img src="assets/Frame (4).png" alt="" />
+            <img src="assets/Frame (5).png" alt="" />
+          </div>
+        </div>
+        <div>
+          <p class="mb-5 font-bold text-[#40196D]">Lagos</p>
+          <ul class="text-sm">
+            <li>1-11</li>
+            <li>Commercial</li>
+            <li>Avenue, Yaba</li>
+            <li>Lagos,</li>
+            <li>Nigeria</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-5 font-bold text-[#40196D]">London</p>
+          <ul class="text-sm">
+            <li>5 New Street</li>
+            <li>Square,</li>
+            <li>London, EC4A</li>
+            <li>3TW,</li>
+            <li>United Kingdom</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-5 font-bold text-[#40196D]">Cape Town</p>
+          <ul class="text-sm">
+            <li>146</li>
+            <li>Campground</li>
+            <li>Road,</li>
+            <li>Snakepit</li>
+            <li>Building, Level 4,</li>
+            <li>Newlands, Cape</li>
+            <li>Town</li>
+          </ul>
+        </div>
+        <div>
+          <p class="mb-5 font-bold text-[#40196D]">Canada</p>
+          <ul class="text-sm">
+            <li>3080 Yonge</li>
+            <li>Street,</li>
+            <li>Suite 6060,</li>
+            <li>Toronto,</li>
+            <li>Ontario M4N,</li>
+            <li>3N1</li>
+          </ul>
+        </div>
+      </section>
+      <!-- Section Footer 3 -->
+      <section class="text-xs mt-5 mb-20 text-[#979797] w-[90%] mx-auto">
+        <p>
+          *Kuda Customers get 25 free transfer to other banks every month. Extra
+          transfers to other banks cost ₦10 each. **Kuda account holders can
+          deposit money in over 10,000 branches across Nigeria for free.
+        </p>
+        <br />
+        <p>
+          © 2024 Kuda Technologies Ltd (Company No.11472232). All rights
+          reserved.
+        </p>
+        <br />
+        <p>
+          If you would like to find out more about which Kuda entity you receive
+          services from, please reach out to us via the in-app chat in the Kuda
+          app. Nigerian banking services offered by Kuda Microfinance Bank
+          (RC796975) with registered address at 1-11 Commercial Avenue, Yaba,
+          Lagos, Nigeria. Kuda Microfinance Bank is licensed by the Central Bank
+          of Nigeria. Deposits are insured by the Nigerian Deposit Insurance
+          Corporation (NDIC).
+        </p>
+        <br />
+        <p>
+          UK services are offered by Kuda EMI Ltd (Company No. 13724208) with
+          registered address at 5 New Street Square, London, EC4A 3TW, United
+          Kingdom.
+        </p>
+        <br />
+        <p>
+          Canada services will be provided by Kuda Canada Technologies Limited,
+          an Ontario corporation registered under number 1000286176, with its
+          registered address located at 3080 Yonge Street, Suite 6060, Toronto,
+          Ontario M4N 3N1. Kuda Canada Technologies Limited is duly registered
+          with The Financial Transactions and Reports Analysis Centre of Canada
+          (FINTRAC) as a money service business, bearing registration number
+          M23163015.
+        </p>
+      </section>
+
+      <!-- Mobile View -->
+      <section
+        class="flex justify-between items-center w-full bg-[#f3f5ff] p-2 -ml-6 fixed bottom-0 md:hidden"
+      >
+        <div class="flex items-center gap-2">
+          <img src="assets/kudaLogo.png" alt="" class="w-[50px]" />
+          <div class="">
+            <p class="font-bold text-[#40196D]">Kuda.</p>
+            <img src="assets/stars.png" alt="" class="w-[100px]" />
+          </div>
+        </div>
+
+        <div>
+          <button class="bg-[#40196D] text-white text-sm py-2 px-5 rounded-lg">
+            Get the App
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
